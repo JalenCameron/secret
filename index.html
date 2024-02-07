@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tic-Tac-Toe</title>
+    <link rel="stylesheet" href="./styles/styles.css" />
+  </head>
+  <body>
+    <section>
+      <h1 class="game-title">Tic Tac Toe</h1>
+
+      <!-- Creating a container for the Game Board -->
+      <div class="game-container">
+        <!-- Using data-cell-index to track which cell has been clicked each turn -->
+        <div data-cell-index="0" class="player"></div>
+        <div data-cell-index="1" class="player"></div>
+        <div data-cell-index="2" class="player"></div>
+        <div data-cell-index="3" class="player"></div>
+        <div data-cell-index="4" class="player"></div>
+        <div data-cell-index="5" class="player"></div>
+        <div data-cell-index="6" class="player"></div>
+        <div data-cell-index="7" class="player"></div>
+        <div data-cell-index="8" class="player"></div>
+      </div>
+
+      <!-- Creating a div to show the status of the Game -->
+      <h2 class="game-status"></h2>
+
+      <button class="game-reset">Reset Game</button>
+    </section>
+
+    <script src="./scripts/scripts.js"></script>
+  </body>
+</html>
