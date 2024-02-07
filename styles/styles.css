@@ -1,25 +1,119 @@
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    background: #FFDEE3;
 }
 
-section {
+.bellota-light {
+    font-family: "Bellota", system-ui;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.bellota-light-italic {
+    font-family: "Bellota", system-ui;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.bellota-regular {
+    font-family: "Bellota", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.bellota-regular-italic {
+    font-family: "Bellota", system-ui;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.bellota-bold {
+    font-family: "Bellota", system-ui;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.bellota-bold-italic {
+    font-family: "Bellota", system-ui;
+    font-weight: 700;
+    font-style: italic;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: "Bellota", system-ui;
+}
+
+/** Container Styling **/
+
+.naomi .container {
+    padding: 120px 25px;
+}
+
+.naomi .wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 400px;
+    background: #fff;
+    margin: 0 auto;
+    border-radius: 15px;
+    padding: 30px;
+}
+
+.naomi .wrapper img {
+    max-width: 150px;
+}
+
+.naomi .wrapper .question {
+    font-size: 2rem;
     text-align: center;
+    color: #C00000;
 }
 
-.game-container {
-    display: grid;
-    grid-template-columns: repeat(3, auto);
-    width: 306px;
-    margin: 3rem auto;
-}
-
-.player {
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    width: 100px;
-    height: 100px;
-    box-shadow: 0 0 0 1px #333333;
-    border: 1px solid #333333;
+/** Button Styling **/
+.naomi .wrapper .btn-group button {
+    outline: none;
+    position: relative;
+    width: 150px;
+    border-radius: 20px;
+    padding: 10px;
     cursor: pointer;
-    line-height: 100px;
-    font-size: 3rem;
+    margin: 0 10px;
+}
+
+.naomi .wrapper .btn-group .yes {
+    background: #FF3334;
+    color: #fff;
+    border: 2px solid #FF3334;
+}
+
+.naomi .wrapper .btn-group .yes:hover {
+    background: #ffffff;
+    color: #FF3334;
+    border: 2px solid #FF3334;
+}
+
+.naomi .wrapper .btn-group .no {
+    background: #ffffff;
+    color: #FF3334;
+    border: 2px solid #FF3334;
+}
+
+.naomi .wrapper .btn-group .no:hover {
+    background: #FF3334;
+    color: #fff;
+    border: 2px solid #FF3334;
+}
+
+@media (max-width: 500px) {
+    .naomi .wrapper .btn-group {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .naomi .wrapper .btn-group button {
+        margin: 5px;
+    }
 }
