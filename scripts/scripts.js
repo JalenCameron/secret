@@ -19,6 +19,7 @@ function changeImage() {
   document.querySelector(".wrapper").prepend(yesImage);
 }
 
+// Change Image when clicking on "Yes"
 yesButton.addEventListener("click", () => {
   question.innerHTML = "Woohoo! Thanks :)";
   document.querySelector(".yes").disabled = true;
@@ -26,6 +27,7 @@ yesButton.addEventListener("click", () => {
   removeImage();
 });
 
+// Can't click on "No" button
 noButton.addEventListener("mouseover", () => {
   const i = Math.floor(
     Math.random() * (wrapperRect.width - noButtonRect.width) + 1
@@ -37,3 +39,8 @@ noButton.addEventListener("mouseover", () => {
   noButton.style.left = i + "px";
   noButton.style.top = j + "px";
 });
+
+// Refresh page
+function refresh() {
+  window.location.reload();
+}

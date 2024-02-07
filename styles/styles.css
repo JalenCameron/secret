@@ -107,6 +107,17 @@ h4 {
     border: 2px solid #FF3334;
 }
 
+.naomi .wrapper .clear-button {
+    width: 100px;
+    padding: 10px;
+    cursor: pointer;
+    margin: 10px;
+    background: #E24767;
+    color: #ffffff;
+    border: 2px solid #E24767;
+    border-radius: 10px;
+}
+
 @media (max-width: 500px) {
     .naomi .wrapper .btn-group {
         display: flex;
